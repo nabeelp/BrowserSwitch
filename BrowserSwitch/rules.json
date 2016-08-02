@@ -1,0 +1,63 @@
+
+{
+  "browsers": [
+    {
+      "Firefox": {
+        "registryName": "FIREFOX.EXE",
+        "command": "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe",
+        "icon": "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe,0",
+        "args": "-osint -url {url}"
+      }
+    },
+    {
+      "Chrome": {
+        "registryName": "Google Chrome",
+        "command": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+        "icon": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe,0",
+        "args": "{url}"
+      }
+    },
+    {
+      "IE": {
+        "registryName": "IEXPLORE.EXE",
+        "command": "C:\\Program Files\\Internet Explorer\\iexplore.exe",
+        "icon": "C:\\Program Files\\Internet Explorer\\iexplore.exe,-9",
+        "args": "{url}"
+      }
+    },
+    {
+      "Edge": {
+        "command": "{exePath}\\launchEdge.cmd",
+        "icon": "Edge.png",
+        "args": "\"{url}\""
+      }
+    }
+  ],
+	"defaultBrowser" : "Firefox",
+	"urlRules" : [
+    {
+      "type": "fullDomain",
+      "description": "Where the complete domain matches one of the values in array of values",
+      "values": [ "aka.ms", "microsoft.sharepoint.com" ],
+      "browser": "Edge"
+    },
+    {
+      "type": "domainStart",
+      "description": "Where the domain starts with one of the values in array of values",
+      "values": [ "firstpart." ],
+      "browser": "Chrome"
+    },
+    {
+      "type": "domainEnd",
+      "description": "Where the domain ends with one of the values in array of values",
+      "values": [ ".microsoft.com" ],
+      "browser": "Edge"
+    },
+    {
+      "type": "Intranet",
+      "description": "Where the domain does not have a full-stop in it",
+      "browser": "Edge"
+    }
+	]
+
+}

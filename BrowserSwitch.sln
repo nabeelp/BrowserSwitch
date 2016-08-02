@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrowserSwitch", "BrowserSwitch\BrowserSwitch.csproj", "{69E50B21-2A05-4011-997A-78F6A4049151}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrowserSwitchTests", "BrowserSwitchTests\BrowserSwitchTests.csproj", "{A78EF9FD-A199-4538-B4A1-DDACFFA2BD08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{69E50B21-2A05-4011-997A-78F6A4049151}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69E50B21-2A05-4011-997A-78F6A4049151}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69E50B21-2A05-4011-997A-78F6A4049151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A78EF9FD-A199-4538-B4A1-DDACFFA2BD08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A78EF9FD-A199-4538-B4A1-DDACFFA2BD08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A78EF9FD-A199-4538-B4A1-DDACFFA2BD08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78EF9FD-A199-4538-B4A1-DDACFFA2BD08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
